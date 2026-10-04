@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Moony's | Chopped Cheese & Burgers</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #fff9d6;
+      color: #111;
+    }
+
+    /* NAVBAR */
+    header {
+      background: #ffd400;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 3px solid #111;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: bold;
+      margin-left: 25px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 600px;
+      background: #111;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 70px 8%;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .hero h1 {
+      font-size: 75px;
+      line-height: .95;
+      margin-bottom: 20px;
+    }
+
+    .yellow {
+      color: #ffd400;
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+
+    .button {
+      display: inline-block;
+      background: #ffd400;
+      color: #111;
+      padding: 16px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    .button:hover {
+      background: white;
+    }
+
+    /* MENU */
+    .menu {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 45px;
+      margin-bottom: 45px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border: 3px solid #111;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      transition: .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      box-shadow: 8px 8px 0 #ffd400;
+    }
+
+    .food {
+      font-size: 70px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    /* ABOUT */
+    .about {
+      background: #ffd400;
+      padding: 70px 8%;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    /* LOCATION */
+    .location {
+      padding: 70px 8%;
+      text-align: center;
+      background: white;
+    }
+
+    .location h2 {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+
+    .address {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hours {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    footer strong {
+      color: #ffd400;
+    }
+
+    /* MOBILE */
+    @media (max-width: 650px) {
+
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero h1 {
+        font-size: 55px;
+      }
+
+      .hero {
+        min-height: 500px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+
+    <div class="logo">
+      🌙 MOONY'S
+    </div>
+
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#location">Location</a>
+    </nav>
+
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>
+        <span class="yellow">MOONY'S</span><br>
+        DELI & GRILL
+      </h1>
+
+      <p>
+        Chopped cheese. Burgers. Fries.
+        Good food right around the corner.
+      </p>
+
+      <a href="#menu" class="button">
+        VIEW MENU
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+
+    <h2 class="section-title">
+      OUR MENU
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="food">🥪</div>
+
+        <h3>Chopped Cheese</h3>
+
+        <p>
+          Beef, melted cheese, lettuce,
+          tomato and grilled onions.
+        </p>
+
+        <div class="price">
+          $9.99
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="food">🍔</div>
+
+        <h3>Moony's Burger</h3>
+
+        <p>
+          Juicy beef patty with cheese
+          and our special toppings.
+        </p>
+
+        <div class="price">
+          $10.99
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="food">🍟</div>
+
+        <h3>French Fries</h3>
+
+        <p>
+          Crispy, golden and seasoned
+          just right.
+        </p>
+
+        <div class="price">
+          $4.99
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="food">🍔🍟</div>
+
+        <h3>Burger & Fries</h3>
+
+        <p>
+          A Moony's burger served with
+          crispy golden fries.
+        </p>
+
+        <div class="price">
+          $13.99
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <h2>WHY MOONY'S?</h2>
+
+    <p>
+      We're your neighborhood spot for good food,
+      big flavors, and late-night cravings.
+      Come grab a chopped cheese, burger, or fries
+      and make yourself at home.
+    </p>
+
+  </section>
+
+
+  <!-- LOCATION -->
+  <section class="location" id="location">
+
+    <h2>COME SEE US</h2>
+
+    <p class="address">
+      📍 5056 Adeline St
+    </p>
+
+    <p class="hours">
+      🕐 Open Daily: 8 AM – 2 AM
+    </p>
+
+    <a
+      class="button"
+      href="https://www.google.com/maps/search/?api=1&query=5056+Adeline+St"
+      target="_blank">
+      GET DIRECTIONS
+    </a>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 <strong>MOONY'S</strong> — Deli & Grill
+    </p>
+
+  </footer>
+
+</body>
+</html>
